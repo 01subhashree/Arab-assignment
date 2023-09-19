@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: #c0daf1;
+}
+.homeScreen {
+  display: flex;
+  height: 100%;
+  margin-top: 6rem;
+}
+.sidebarScreen {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 4px 3px 8px 1px #c7c1c1;
+}

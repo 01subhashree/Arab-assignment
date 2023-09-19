@@ -1,0 +1,43 @@
+.card1Screen {
+  width: 27rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1rem 0.5rem 1rem 1rem;
+  box-shadow: 1px 4px 13px 0px rgba(211, 191, 191, 1);
+  display: flex;
+  font-size: 0.7rem;
+  gap: 0.3rem;
+  font-family: "Inclusive Sans", sans-serif;
+  font-weight: 400;
+}
+
+.card1Screen_button1 {
+  padding: 0.3rem;
+  font-size: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+.card1Screen_div2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card1Screen_div2 p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card1Screen_button2 {
+  margin-top: 1rem;
+  padding: 0 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  height: 1.5rem;
+}

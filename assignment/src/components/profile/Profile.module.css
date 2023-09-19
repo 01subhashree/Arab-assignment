@@ -1,0 +1,25 @@
+.profile_Screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1.6rem;
+  box-shadow: 4px 4px 4px -3px rgba(211, 191, 191, 0.75);
+}
+.profileScreen_image {
+  border: none;
+  border-radius: 5rem;
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+.profileScreen_name {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 0.8rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 0.6rem;
+}
+.profileScreen_email {
+  font-size: 0.7rem;
+}

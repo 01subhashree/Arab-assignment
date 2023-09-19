@@ -1,0 +1,53 @@
+.homescreen {
+  padding: 2rem 3rem;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.homescreen h2 {
+  font-family: "Inclusive Sans", sans-serif;
+  letter-spacing: -0.5px;
+}
+.homescreen_div2 {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.homescreen_div1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.homescreen_div3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.homescreen_innerDiv {
+  padding: 0.4rem;
+  border: 1px solid;
+  border-radius: 2rem;
+  display: flex;
+}
+.homescreen_innerDiv button {
+  padding: 0.4rem 2.5rem;
+  border: none;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+.homescreen_innerDiv button:hover {
+  background-color: #c0daf1;
+  border: none;
+  border-radius: 2rem;
+}
+
+.homescreen_para {
+  color: #0277bd;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.8rem;
+}
