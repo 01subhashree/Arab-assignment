@@ -1,0 +1,55 @@
+/* Add this CSS for the parallax scrolling effect */
+.slider {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100vw;
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.image {
+  width: 70vw;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s; /* Add a transition for smoother animation */
+  transform: translateZ(0); /* Add 3D transform to enable GPU acceleration */
+}
+
+.right_arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left_arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+  margin-top: 4rem;
+  transform: translateZ(-50px); /* Add a 3D transform to the inactive slides */
+}
+
+.slide_active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08) translateZ(0); /* Add 3D transform to the active slide */
+  position: absolute;
+  margin-top: 5rem;
+  left: 15vw;
+}
