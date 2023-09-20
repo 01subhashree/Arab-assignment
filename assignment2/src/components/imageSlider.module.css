@@ -4,14 +4,16 @@
   display: flex;
   overflow: hidden;
   width: 100vw;
+  height: 100vh;
   perspective: 1000px; /* Add perspective for 3D effect */
 }
 
 .image {
   width: 70vw;
   height: 70vh;
-  object-fit: cover;
-  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: transform 0.5s; /* Add a transition for smoother animation */
   transform: translateZ(0); /* Add 3D transform to enable GPU acceleration */
 }
@@ -19,23 +21,25 @@
 .right_arrow {
   position: absolute;
   top: 50%;
-  right: 32px;
+  right: 2rem;
   font-size: 3rem;
   color: #000;
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  margin-left: -1.5rem;
 }
 
 .left_arrow {
   position: absolute;
   top: 50%;
-  left: 32px;
+  left: 2rem;
   font-size: 3rem;
   color: #000;
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  margin-right: -1.5rem;
 }
 
 .slide {
@@ -52,4 +56,35 @@
   position: absolute;
   margin-top: 5rem;
   left: 15vw;
+}
+
+@media screen and (max-width: 700px) {
+  .left_arrow {
+    left: 1rem;
+  }
+  .right_arrow {
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .left_arrow {
+    top: 87%;
+    left: 43%;
+    font-size: 1.8rem;
+  }
+  .right_arrow {
+    top: 87%;
+    right: 43%;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .left_arrow {
+    left: 41%;
+  }
+  .right_arrow {
+    right: 41%;
+  }
 }
